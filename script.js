@@ -1,6 +1,6 @@
   // CHANGE TO SWITCH PAGES
   // Options: "open" / "soldout" / "comingsoon"
-  const STATUS        = "comingsoon";
+  const STATUS        = "open";
   const CATEGORY_NAME = "Presale";
   const TICKET_PRICE  = 13000;
   const MAX_QTY       = 1;
