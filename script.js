@@ -85,7 +85,7 @@ fetch(APPS_SCRIPT_URL)
   // Format: "Month Day, Year HH:MM:SS"
 
  if (STATUS === "soldout") {
-  var countDownDate = new Date("June 21, 2026 18:00:00").getTime();
+  var countDownDate = new Date("June 21, 2026 18:30:00").getTime();
 
   var countdownInterval = setInterval(function() {
     var now      = new Date().getTime();
