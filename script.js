@@ -111,7 +111,7 @@ fetch(APPS_SCRIPT_URL)
  }
 
  if (STATUS === "comingsoon") {
-  var countDownDate = new Date("June 3, 2026 18:00:00").getTime();
+  var countDownDate = new Date("June 2, 2026 18:00:00").getTime();
 
   var countdownInterval = setInterval(function() {
     var now      = new Date().getTime();
