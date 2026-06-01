@@ -1,9 +1,9 @@
   // CHANGE TO SWITCH PAGES
   // Options: "open" / "soldout" / "comingsoon"
-  const STATUS        = "open";
-  const CATEGORY_NAME = "Presale";
-  const TICKET_PRICE  = 13000;
-  const MAX_QTY       = 1;
+  const STATUS        = "comingsoon";
+  const CATEGORY_NAME = "Reguler";
+  const TICKET_PRICE  = 15000;
+  const MAX_QTY       = 5;
 
   document.getElementById('ticket-name').textContent  = CATEGORY_NAME;
   document.getElementById('ticket-price').textContent = 'Rp ' + TICKET_PRICE.toLocaleString('id-ID') + ' / tiket';
@@ -25,7 +25,7 @@ fetch(APPS_SCRIPT_URL)
       if (STATUS === "soldout" || remaining <= 0) {
         document.getElementById('page-soldout').style.display = 'block';
 
-        var countDownDate = new Date("June 21, 2026 18:00:00").getTime();
+        var countDownDate = new Date("June 21, 2026 18:30:00").getTime();
         var soldoutInterval = setInterval(function() {
           var now      = new Date().getTime();
           var distance = countDownDate - now;
