@@ -48,83 +48,11 @@
       <div id="page-form">
         <div id="form-content">
 
-          <!-- INFORMASI PEMBELI -->
-          <div class="section-label">Informasi Pembeli</div>
-
-          <div class="grid-2">
-            <div class="field full">
-              <label>Nama <span class="req">*</span></label>
-              <input type="text" id="name" placeholder="Budi" required />
-            </div>
-            <div class="field full">
-              <label>E-mail <span class="req">*</span></label>
-              <input type="email" id="email" placeholder="contoh@email.com" required />
-            </div>
-            <div class="field full">
-              <label>Nomor Telepon <span class="req">*</span></label>
-              <input type="tel" id="phone" placeholder="081234567890" required />
-            </div>
-          </div>
-
-          <!-- PEMBELIAN TIKET -->
-          <div class="section-label">Pembelian Tiket</div>
-
           <!-- Soldout notice -->
           <div class="soldout-notice" id="soldout-notice">
             🎟️ Tiket telah habis terjual.
           </div>
-
-          <div style="display:flex; flex-direction:column; gap:10px;">
-            <div class="ticket-row">
-              <div class="ticket-icon">🍿</div>
-              <div class="ticket-info">
-                <div class="t-name" id="ticket-name">Reguler</div>
-                <div class="t-price" id="ticket-price">Rp 15,000 / tiket</div>
-                <div class="ticket-remaining" id="ticket-remaining">Memuat...</div>
-              </div>
-              <div class="qty-control">
-                <button class="qty-btn" onclick="changeQty('ticket', -1)">−</button>
-                <input class="qty-num" id="qty-ticket" type="text" value="0" readonly />
-                <button class="qty-btn" onclick="changeQty('ticket', 1)">+</button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Order Summary -->
-          <div class="summary-box" style="margin-top:16px;">
-            <div class="summary-row"><span>Reguler (×<span id="s-ticket">0</span>)</span><span id="sv-ticket">Rp 0</span></div>
-            <div class="summary-row total"><span>Total</span><span class="val" id="sv-total">Rp 0</span></div>
-          </div>
-        
-          <!-- QRIS Pembayaran -->
-          <div class="section-label">QRIS Pembayaran</div>
-          <div class="qr-wrapper">
-            <img src="qrisptg.jpeg" alt="QRIS Pembayaran" />
-          </div>
-
-          <!-- BUKTI PEMBAYARAN -->
-          <div class="section-label">Bukti Pembayaran</div>
-
-          <div class="field full">
-            <label>Unggah Bukti Pembayaran <span class="req">*</span></label>
-            <div class="upload-zone" id="upload-zone">
-              <input type="file" id="payment-proof" accept="image/*,.pdf" onchange="handleFile(this)" />
-              <span class="upload-icon">📎</span>
-              <div class="up-title">Mohon unggah bukti pembayaran di sini</div>
-              <div class="up-sub">atau <span>cari</span> untuk unggah &nbsp;·&nbsp; JPG, PNG, PDF &nbsp;·&nbsp; Max 5MB</div>
-              <div id="file-name"></div>
-            </div>
-          </div>
-
-          <!-- KIRIM -->
-          <button class="submit-btn" onclick="handleSubmit()">
-            Kirim →
-          </button>
-
-          <p class="form-note">
-            Informasi pembeli hanya untuk keperluan pembelian tiket.
-          </p>
-
+          
       </div><!-- /form-content -->
 
       <!-- Success Message -->
