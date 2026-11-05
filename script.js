@@ -25,7 +25,7 @@ fetch(APPS_SCRIPT_URL)
       if (STATUS === "soldout" || remaining <= 0) {
         document.getElementById('page-soldout').style.display = 'block';
 
-        var countDownDate = new Date("June 21, 2026 18:30:00").getTime();
+        var countDownDate = new Date("June 21, 2027 18:30:00").getTime();
         var soldoutInterval = setInterval(function() {
           var now      = new Date().getTime();
           var distance = countDownDate - now;
